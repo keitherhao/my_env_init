@@ -39,6 +39,16 @@ if [ ! -d "$HOME/.oh-my-zsh" ];then
 	rm -rf install.sh*
 fi
 
+# Chinease support
+#tmp="`cat $HOME/.zshrc | grep \"=zh_CN.UTF-8\"`"
+#echo $tmp
+#if [ -z "$tmp" ];then
+#	echo "Modfi language"
+#	sed -i '$a\export LANG=zh_CN.UTF-8' $HOME/.zshrc
+#	sed -i '$a\export LANGUAGE=zh_CN.UTF-8' $HOME/.zshrc
+#	sed -i '$a\export LC_ALL=zh_CN.UTF-8' $HOME/.zshrc
+#fi
+
 echo "End exec $0"
 
 exit 0
