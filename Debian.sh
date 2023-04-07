@@ -26,6 +26,7 @@ if [ ! -d "$HOME/.oh-my-zsh" ];then
 	sed -i 's|REMOTE=${REMOTE:-https://github.com/${REPO}.git}|REMOTE=${REMOTE:-https://gitee.com/${REPO}.git}|' install.sh
 	./install.sh
 	rm -rf install.sh*
+	sudo sed -i 's|bash|zsh|' /etc/passwd
 fi
 
 exit 0
